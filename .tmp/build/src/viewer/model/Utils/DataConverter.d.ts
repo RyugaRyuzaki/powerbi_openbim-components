@@ -1,0 +1,33 @@
+import * as WEBIFC from "web-ifc";
+import * as FRAGS from "bim-fragment";
+import { IfcGeometries } from "./GeometryReader";
+import { ModelSetting } from "../ModelSetting";
+import { IfcItemsCategories } from "./IfcCategories";
+export declare class DataConverter {
+    settings: ModelSetting;
+    categories: IfcItemsCategories;
+    private _model;
+    private _ifcCategories;
+    private _bbox;
+    private _fragmentKey;
+    private _keyFragmentMap;
+    private _itemKeyMap;
+    private _propertyExporter;
+    private readonly _spatialTree;
+    constructor();
+    cleanUp(): void;
+    saveIfcCategories(webIfc: WEBIFC.IfcAPI): void;
+    generate(webIfc: WEBIFC.IfcAPI, geometries: IfcGeometries): Promise<FRAGS.FragmentsGroup>;
+    private saveModelData;
+    private getBoundingBox;
+    private getIfcMetadata;
+    private getMetadataEntry;
+    private getProjectID;
+    private getCoordinationMatrix;
+    private getModelProperties;
+    private createAllFragments;
+    private setupModel;
+    private setupFragment;
+    private saveExpressID;
+    private getFragmentsGroupData;
+}

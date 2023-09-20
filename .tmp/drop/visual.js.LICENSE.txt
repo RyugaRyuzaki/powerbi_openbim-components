@@ -1,0 +1,12 @@
+/*!
+ * camera-controls
+ * https://github.com/yomotsu/camera-controls
+ * (c) 2017 @yomotsu
+ * Released under the MIT License.
+ */
+
+/**
+ * @license
+ * Copyright 2010-2023 Three.js Authors
+ * SPDX-License-Identifier: MIT
+ */

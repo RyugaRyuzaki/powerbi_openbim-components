@@ -1,0 +1,26 @@
+{
+    "visual": {
+        "name": "example",
+        "displayName": "example",
+        "guid": "exampleD7B3346A52CC4CC7A469ED9D0938BF65",
+        "visualClassName": "Visual",
+        "version": "1.0.0.0",
+        "description": "asdasd",
+        "supportUrl": "asdasda",
+        "gitHubUrl": "asdasdad"
+    },
+    "apiVersion": "5.3.0",
+    "author": {
+        "name": "asdasda",
+        "email": "asdasdad"
+    },
+    "assets": {
+        "icon": "assets/icon.png"
+    },
+    "externalJS": null,
+    "style": "style/visual.less",
+    "capabilities": "capabilities.json",
+    "dependencies": null,
+    "stringResources": [],
+    "version": "1.0.0.0"
+}
