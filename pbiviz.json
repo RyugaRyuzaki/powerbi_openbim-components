@@ -1,8 +1,8 @@
 {
     "visual": {
-        "name": "example",
-        "displayName": "example",
-        "guid": "exampleD7B3346A52CC4CC7A469ED9D0938BF65",
+        "name": "openbim-component",
+        "displayName": "openbim-component",
+        "guid": "openbim-component",
         "visualClassName": "Visual",
         "version": "1.0.0.0",
         "description": "asdasd",
