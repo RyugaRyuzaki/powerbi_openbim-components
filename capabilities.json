@@ -1,6 +1,5 @@
 {
-    "dataRoles": [
-        {
+    "dataRoles": [{
             "displayName": "Category Data",
             "name": "category",
             "kind": "Grouping"
@@ -42,7 +41,7 @@
                         "fill": {}
                     }
                 },
-                 "fontSize": {
+                "fontSize": {
                     "type": {
                         "formatting": {
                             "fontSize": true
@@ -52,28 +51,29 @@
             }
         }
     },
-    "dataViewMappings": [
-        {
-            "categorical": {
-                "categories": {
-                    "for": {
-                        "in": "category"
-                    },
-                    "dataReductionAlgorithm": {
-                        "top": {}
-                    }
+    "dataViewMappings": [{
+        "categorical": {
+            "categories": {
+                "for": {
+                    "in": "category"
                 },
-                "values": {
-                    "select": [
-                        {
-                            "bind": {
-                                "to": "measure"
-                            }
-                        }
-                    ]
+                "dataReductionAlgorithm": {
+                    "top": {}
                 }
+            },
+            "values": {
+                "select": [{
+                    "bind": {
+                        "to": "measure"
+                    }
+                }]
             }
         }
-    ],
-    "privileges": []
+    }],
+
+    "privileges": [{
+        "name": "WebAccess",
+        "essential": true,
+        "parameters": ["http://localhost:3000"]
+    }]
 }
