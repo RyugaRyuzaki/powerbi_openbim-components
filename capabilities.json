@@ -1,15 +1,9 @@
 {
     "dataRoles": [{
-            "displayName": "Category Data",
-            "name": "category",
-            "kind": "Grouping"
-        },
-        {
-            "displayName": "Measure Data",
-            "name": "measure",
-            "kind": "Measure"
-        }
-    ],
+        "displayName": "Bim Model",
+        "name": "model",
+        "kind": "GroupingOrMeasure"
+    }],
     "objects": {
         "dataPoint": {
             "properties": {
@@ -52,25 +46,22 @@
         }
     },
     "dataViewMappings": [{
-        "categorical": {
-            "categories": {
+
+        "table": {
+            "rows": {
                 "for": {
-                    "in": "category"
+                    "in": "model"
                 },
                 "dataReductionAlgorithm": {
-                    "top": {}
-                }
-            },
-            "values": {
-                "select": [{
-                    "bind": {
-                        "to": "measure"
+                    "window": {
+                        "count": 100000
                     }
-                }]
+                }
             }
         }
     }],
-
+    "supportsMultiVisualSelection": true,
+    "supportsHighlight": true,
     "privileges": [{
         "name": "WebAccess",
         "essential": true,

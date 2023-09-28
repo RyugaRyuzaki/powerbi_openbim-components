@@ -1695,9 +1695,20 @@ dialog::backdrop{
 p {
   font-size: 20px;
   font-weight: bold;
+  color: black;
+  z-index: 2000;
 }
 p em {
   background: yellow;
   padding: 5px;
+}
+table,
+th,
+td {
+  border: 1px solid;
+}
+th,
+td {
+  padding: 15px;
 }
 
