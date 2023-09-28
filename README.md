@@ -29,10 +29,12 @@
     - Open Terminal 
     - Make sure pbiviz to installed in your machine run : pbiviz
 ![image](https://github.com/RyugaRyuzaki/powerbi_openbim-components/assets/89787521/a318d03a-afcd-4d93-a8cf-f4fcaeba42c5)
+# Run
     - Run : npm install to install all package
     - Change fileId same fileId of exam.py
     - To generate run : pbiviz package
     - It will be automaticly create a folder dist
+https://youtu.be/fshAnjjLPGI
 
     
     
